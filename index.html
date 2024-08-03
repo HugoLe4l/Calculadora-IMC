@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <title>Calculadora IMC</title>
+</head>
+<body>
+    <main>
+        <img class="img-logo" src="img/imc.png">
+        <h2>Calculadora IMC</h2>
+        <div class="info-imc">
+            <p>O IMC (Índice de Massa Corporal) é uma medida utilizada para avaliar se uma pessoa está dentro do peso ideal em relação à sua altura. É calculado dividindo-se o peso da pessoa (em quilogramas)pela altura (em metros) elevada ao quadrado. A fórmula do IMC é a seguinte:</p>
+            <p id="formula-imc">IMC = altura (m)² / peso(kg)</p>
+            <p>Os valores do IMC são classificados em categorias que indicam se a pessoa está abaixo do peso, com peso normal, com sobrepeso ou obesa. As classificações gerais são:</p>
+        </div>
+        <div class="box-content">
+            <table>
+                <thead>
+                    <tr id="table-header">
+                        <th>IMC</th>
+                        <th>CLASSIFICAÇÃO</th>
+                        <th>OBESIDADE ( GRAU )</th>
+                    </tr>
+    
+                    <tr>
+                        <th>Menor que 18,5</th>
+                        <th>Magreza</th>
+                        <th>0</th>
+                    </tr>
+    
+                    <tr>
+                        <th>Entre 18,5 e 24,9</th>
+                        <th>Normal</th>
+                        <th>0</th>
+                    </tr>
+    
+                    <tr>
+                        <th>Entre 25,0 e 29,9</th>
+                        <th>Sobrepeso</th>
+                        <th>I</th>
+                    </tr>
+    
+                    <tr>
+                        <th>Entre 30,0 e 39,9</th>
+                        <th>Obesidade</th>
+                        <th>II</th>
+                    </tr>
+    
+                    <tr>
+                        <th>Maior que 40,0</th>
+                        <th>Obesidade Grave</th>
+                        <th>III</th>
+                    </tr>
+                </thead>
+            </table>
+            <div class="box-calculadora">
+                <div class="content-calculadora">
+                    <h3>Calcule seu IMC</h3>
+                    <div class="inputs-box">
+                        <label>Sua Altura</label>
+                        <input id="input-altura" class="input-field" type="text" required>
+                    </div>
+
+                    <div class="inputs-box">
+                        <label>Seu peso</label>
+                        <input id="input-peso" class="input-field" type="number" required>
+                    </div>
+                    <div class="btns">
+                        <a id="btn-calcular" class="btns-calculator">Calcular</a>
+                         <a id="btn-limpar" class="btns-calculator">Limpar</a>
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+        <div id="box-result" style="display: none;">
+            <p id="result-text">000</p>
+            <i id="btn-close" class="bi bi-x-circle-fill"></i>
+        </div>
+
+        </div>
+    </main>
+    <footer>
+        <a href="https://github.com/HugoLe4l" target="_blank"><i class="bi bi-github"></i></a>
+        <p>© Copyright | 2024  </p>
+        <img class="cat-img" src="img/cartoon cat.png" alt="cat">
+    </footer>
+</body>
+</html>
